@@ -48,7 +48,7 @@
 			<div class="grid grid-cols-3 bg-gray-100 p-4 font-semibold">
 				<div>API Endpoint</div>
 				<div>Status</div>
-				<div>Monthly Downtime</div>
+				<div class="text-center">Monthly Downtime</div>
 			</div>
 			{#if apiEndpoints.length === 0}
 				<p class="text-center text-gray-600">No data available</p>
@@ -63,7 +63,7 @@
 						></span>
 						{endpoint.status}
 					</div>
-					<div>{endpoint.responseTime}</div>
+					<div class="text-center">{endpoint.responseTime}</div>
 				</div>
 			{/each}
 		</div>
